@@ -6,6 +6,20 @@ This repo is a fork of `serac-labs/serac`. The state file `.github/upstream-sync
 which upstream commits have been decided (picked/skipped/deferred). The triage CLI is at
 `script/upstream-triage.ts`.
 
+## Protected files — NEVER overwrite with upstream content
+
+This fork has diverged intentionally from upstream in several files. These must always keep **our**
+version, regardless of what upstream changed:
+
+- **`README.md`** — fully rebranded from "Serac" to "Snow-Flow" with UTA-specific install
+  instructions (local build from source, not `curl … | bash`). Any upstream README change
+  will conflict here. Always resolve with `--ours`.
+- **`packages/opencode/package.json`** — different package name (`snow-flow` vs `@serac-labs/core`),
+  different version scheme (11.x vs upstream's 1.x), different `bin` entries, different repo URL.
+  Always resolve with `--ours`.
+
+If a cherry-pick touches only protected files, skip it instead of picking it.
+
 ## Steps
 
 1. **Ensure the upstream remote is configured:**
@@ -48,9 +62,30 @@ which upstream commits have been decided (picked/skipped/deferred). The triage C
    - Large refactors touching many files where conflict risk is high
    - Anything where the intent is unclear
 
-5. **Handle cherry-pick conflicts:**
-   If `bun run script/upstream-triage.ts pick <sha>` exits non-zero, abort that cherry-pick
-   (`git cherry-pick --abort`), then defer the commit instead with reason "conflict".
+5. **After each successful cherry-pick, restore protected files:**
+   ```bash
+   git checkout HEAD~1 -- README.md packages/opencode/package.json 2>/dev/null || true
+   # If those files were in the cherry-pick, re-commit without them:
+   git diff --cached --quiet || git commit --amend --no-edit
+   ```
+   This ensures upstream branding/version changes never leak into our tree even when the
+   cherry-pick itself succeeds cleanly.
+
+6. **Handle cherry-pick conflicts:**
+   If `bun run script/upstream-triage.ts pick <sha>` exits non-zero:
+   - Check which files are conflicted: `git diff --name-only --diff-filter=U`
+   - If **only** protected files are conflicted: resolve with `--ours` and finish the pick:
+     ```bash
+     git checkout --ours -- README.md packages/opencode/package.json
+     git add README.md packages/opencode/package.json
+     git cherry-pick --continue --no-edit
+     bun run script/upstream-triage.ts mark-picked <sha>
+     ```
+   - If **non-protected** files are also conflicted: abort and defer instead:
+     ```bash
+     git cherry-pick --abort
+     bun run script/upstream-triage.ts defer <sha> "conflict in non-protected files"
+     ```
 
 6. **After triaging all commits, advance the cursor:**
    ```
