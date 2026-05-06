@@ -1,6 +1,237 @@
 {
-  "cursor": "ba290b2982e2a7db36404c5aa1e6a5ba2dc48d2b",
-  "last_synced_upstream": null,
-  "last_synced_at": "2026-05-01",
-  "decisions": {}
+  "cursor": "6e183c04148da651e9ec652987fd569b5cd271db",
+  "last_synced_upstream": "114c3b30cee48a0e6cd473fdb7a1c0e028fd5369",
+  "last_synced_at": "2026-05-06",
+  "decisions": {
+    "a83c49a97f717e6369c44deceead60f2bf95aa64": {
+      "status": "skipped",
+      "reason": "regenerated tools.json [skip ci]",
+      "date": "2026-05-06"
+    },
+    "766ae235c0cd7c277a50e28436ecf7dd4efad99e": {
+      "status": "skipped",
+      "reason": "regenerated tools.json [skip ci]",
+      "date": "2026-05-06"
+    },
+    "4f4cc6bbfc313db5f7f14a918eb204bbc96c9d6d": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "6928bdddcf0787ba65d0e47a5ea599dbd6764da0": {
+      "status": "skipped",
+      "reason": "release commit (upstream npm publish)",
+      "date": "2026-05-06"
+    },
+    "1eb86080e76f0c4ce44a91c79980d6ce33938444": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "380b9b1cfad1ce497de860e7279bcd267575160d": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "245440d74d54b8fa0bd880dc50dd781f380eaede": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "9e61c32bbf62bd574c8bc3e0db2bc182c6d5398f": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "cf602dcc6d789977c27d2d921f32c551685badc8": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "47225a0ae3df65af202d3ee24fb33fdc458808ed": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "b7193c13fc05085560ac22b9e48196e2113d75d0": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "c3f9b6013b1ed810b2df7c6e8e7987d540781316": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "f2dce2f4fcb5f89e2c75b6ea31a741bfd2118e3e": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "fa233426511ff6b43295f5d1a29e46e9bd62ed03": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "9561088de68050d05c6fd9339636306321346a70": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "e7f8eed4de1747d3b4ba2f2ad2c3ac7e563c6376": {
+      "status": "skipped",
+      "reason": "version bump [skip ci]",
+      "date": "2026-05-06"
+    },
+    "6b6f184e8ccbb46f1142631b5c8b1ec10a847575": {
+      "status": "skipped",
+      "reason": "rebrand: rename @serac-labs/serac → @serac-labs/core (touches protected package.json)",
+      "date": "2026-05-06"
+    },
+    "3d039a1c6341eabbe3eb67b38015060e96e0d1f9": {
+      "status": "skipped",
+      "reason": "rebrand: snow-flow → serac sweep (touches protected README)",
+      "date": "2026-05-06"
+    },
+    "167f41501fa30f91cb513dac060385c5d2a8cc8a": {
+      "status": "skipped",
+      "reason": "rebrand: npm package reset (touches protected package.json)",
+      "date": "2026-05-06"
+    },
+    "f361082b0a84e7061f9af2d7d1ab06687c38bfb9": {
+      "status": "skipped",
+      "reason": "rebrand: version reset (touches protected package.json)",
+      "date": "2026-05-06"
+    },
+    "6e183c04148da651e9ec652987fd569b5cd271db": {
+      "status": "skipped",
+      "reason": "rebrand: SNOWFLOW ASCII → SERAC wordmark (touches protected README)",
+      "date": "2026-05-06"
+    },
+    "29e0d4fe55be3c6e67d02c5a3a92dc9127f8d339": {
+      "status": "skipped",
+      "reason": "upstream sync state file [skip ci]",
+      "date": "2026-05-06"
+    },
+    "1fa58d5633c13f9b330a6abc919f6ea56c7e49f8": {
+      "status": "skipped",
+      "reason": "docs(claude) tools.json note [skip ci]",
+      "date": "2026-05-06"
+    },
+    "313d643fc9e1cf68e2004990d6e4b4f427a732ae": {
+      "status": "skipped",
+      "reason": "rebrand: publish under @serac-labs/core",
+      "date": "2026-05-06"
+    },
+    "31f9891057350d97ff01ea89f5a3d68f83cdccd6": {
+      "status": "skipped",
+      "reason": "rebrand: rename npm package",
+      "date": "2026-05-06"
+    },
+    "800a2f5577175d8f23944b442a5a617e56c45801": {
+      "status": "skipped",
+      "reason": "rebrand: publish as @serac-labs/core, expose serac CLI",
+      "date": "2026-05-06"
+    },
+    "606f66c17b749312a65f44d52e1dad7c7774bd9e": {
+      "status": "skipped",
+      "reason": "rebrand: point publish workflows at serac-labs/serac",
+      "date": "2026-05-06"
+    },
+    "4f7d885bd38dde8acdc830c01d57e3782df095a6": {
+      "status": "skipped",
+      "reason": "rebrand: serac rename in main README (protected)",
+      "date": "2026-05-06"
+    },
+    "39a2e5f7dc20d641b486dfa2acc4ea1ffe6390fb": {
+      "status": "skipped",
+      "reason": "rebrand: SERAC across locale READMEs",
+      "date": "2026-05-06"
+    },
+    "2bbf6ed80d288aafc650263f978d217d9a9fbe1a": {
+      "status": "skipped",
+      "reason": "upstream sync state file [skip ci]",
+      "date": "2026-05-06"
+    },
+    "66f6125ca4f7d89308e6944160ab1a2f043f9cec": {
+      "status": "skipped",
+      "reason": "docs(readme) only — README is protected",
+      "date": "2026-05-06"
+    },
+    "4514ec5548d7b549ba05a913cad26279039396be": {
+      "status": "skipped",
+      "reason": "ci(publish): NPM_TOKEN for upstream npm bootstrap",
+      "date": "2026-05-06"
+    },
+    "0f89a91dd30daa21a33d3087b05a76d2af52c472": {
+      "status": "skipped",
+      "reason": "ci(mcp-http): publish to upstream-specific repo",
+      "date": "2026-05-06"
+    },
+    "114c3b30cee48a0e6cd473fdb7a1c0e028fd5369": {
+      "status": "skipped",
+      "reason": "default URL change to dashboard.serac.build (upstream-specific telemetry endpoint)",
+      "date": "2026-05-06"
+    },
+    "cad9896fcacae5976920b6046e3d9c6aea39cf05": {
+      "status": "skipped",
+      "reason": "expands tools.json schema for docs.serac.build renderer (upstream docs infra)",
+      "date": "2026-05-06"
+    },
+    "eb33c6fd51dd7117f53c2f6dd7e504ec775c6317": {
+      "status": "skipped",
+      "reason": "tools.json manifest for docs.serac.build (upstream docs infra)",
+      "date": "2026-05-06"
+    },
+    "3237ccd97ec3b955b3a33371d32042fd4e59a21a": {
+      "status": "deferred",
+      "reason": "agent template guidance for sn_render_preview — depends on portal/enterprise; revisit when portal infra is confirmed",
+      "date": "2026-05-06"
+    },
+    "c3cba848446bee8f94e41c1eb6ecbbce5de97a5b": {
+      "status": "skipped",
+      "reason": "upstream npm publish workflow tweaks (touches protected package.json)",
+      "date": "2026-05-06"
+    },
+    "4ad508ac60c75a56a5fb6d55b67cca4840b74c4c": {
+      "status": "deferred",
+      "reason": "real dedup fix bundled with snow-flow→serac brand string change in snow_auth_diagnostics.ts; needs manual split",
+      "date": "2026-05-06"
+    },
+    "341e1dd29b3272a0f957db0f8ff085cb1a6247ed": {
+      "status": "deferred",
+      "reason": "drops Instance Map from agents-template; our fork has enterprise package, may still want it",
+      "date": "2026-05-06"
+    },
+    "7cc55764afb6c0a7389474c16c17f5e0faeedcfc": {
+      "status": "deferred",
+      "reason": "feature depends on serac-platform portal endpoint + ~/.snow-code/enterprise.json — verify our portal infra first",
+      "date": "2026-05-06"
+    },
+    "038cd0a05f1a3a441d97189fa43478dc28895f91": {
+      "status": "picked",
+      "our_commit": "488d523d3ed4ff95ecf7a5c8c447694654f84581",
+      "date": "2026-05-06"
+    },
+    "d3071220ccd1289fe90f0787bdf51b67fa8b89b1": {
+      "status": "picked",
+      "our_commit": "ce162c0ba7de66075869fc31d6b9de788794a2fa",
+      "date": "2026-05-06"
+    },
+    "5d74cb3c3cd8fc10a317aa035f9bcdb35331b1e6": {
+      "status": "picked",
+      "our_commit": "62bb716e0e53209a4890e7d7d34a196ad8bc03b4",
+      "date": "2026-05-06"
+    },
+    "b0eb5c4fce8555069180d0be4438cf4b879d60ac": {
+      "status": "picked",
+      "our_commit": "70b1f2282836d2bf195445cd78b3f103b6f4dd92",
+      "date": "2026-05-06"
+    },
+    "d741ba335cedd4ce90814887c1e62e3e4377e0ef": {
+      "status": "picked",
+      "our_commit": "9da3b5e21f6d3e8d0b67f4e0d046c56bae8f4c46",
+      "date": "2026-05-06"
+    }
+  }
 }
